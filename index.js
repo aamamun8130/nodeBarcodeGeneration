@@ -1,9 +1,10 @@
 const bwipjs = require('bwip-js');
 const fs = require('fs');
+var barCodeString = "Hello Mamun!!!!";
 
 bwipjs.toBuffer({
     bcid:        'code128',       // Barcode type
-    text:        '0123456789',    // Text to encode
+    text:        barCodeString,    // Text to encode
     scale:       3,               // 3x scaling factor
     height:      10,              // Bar height, in millimeters
     includetext: false,            // Show human-readable text
